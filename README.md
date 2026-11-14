@@ -43,8 +43,11 @@ Printed values of the training and test error for each model.
 ## Project Structure
 regularized-regression-from-scratch/
 ─ regularized_regression.py   # Main implementation and demo
-─ lasso_path.png              ![Lasso path](lasso_path.png)
+
+─ lasso_path.png              ![lasso path](lasso_path.png)
+
                               # Regularization path plot
+                              
 ─ README.md                   # Documentation
 
 ## Notes
