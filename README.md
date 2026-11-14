@@ -23,7 +23,7 @@ $$\min_{w} \; \frac{1}{2}\|y - Xw\|_2^2 + \alpha\|w\|_1$$
 
 The penalty term is non-differentiable at zero, so the coefficients are updated one coordinate at a time using the soft-thresholding operator:
 
-$$S_\alpha(\rho) = \operatorname{sign}(\rho)\max(|\rho| - \alpha, 0)$$
+$$S_\alpha(\rho) = \mathrm{sign}(\rho)\,\max(|\rho|-\alpha,0)$$
 
 ## Requirements
 - Python 3.x
