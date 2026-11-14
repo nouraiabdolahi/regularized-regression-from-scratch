@@ -2,7 +2,8 @@
 Ridge and Lasso regression implemented from scratch in NumPy and evaluated on the California Housing dataset.
 
 ## Overview
-This repository contains implementations of two regularized linear regression models built without black-box estimators. Ridge regression is solved analytically, while Lasso is solved with coordinate descent and soft-thresholding. The work focuses on how each penalty shapes the fitted coefficients and on the sparse solutions produced by the $L_1$ term.
+This repository contains implementations of two regularized linear regression models built without black-box estimators. Ridge regression is solved analytically, while Lasso is solved with coordinate descent and soft-thresholding. The work focuses on how each penalty shapes the fitted coefficients and on the 
+sparse solutions produced by the $L_1$ term.
 
 ## Models Implemented
 - **Ridge Regression:** Closed-form solution for the $L_2$-penalized least squares problem.
@@ -32,7 +33,6 @@ $$S_\alpha(\rho) = \operatorname{sign}(\rho)\max(|\rho| - \alpha, 0)$$
 
 ## Usage
 Run the demo script:
-```bash
 python regularized_regression.py
 
 ## Outputs
@@ -46,7 +46,7 @@ regularized-regression-from-scratch/
 ─ lasso_path.png              # Regularization path plot
 ─ README.md                   # Documentation
 
-## دد
+## Notes
+The features are standardized before fitting, since regularized models are not scale-invariant, and the intercept is kept out of the penalty term. Only a subset of the California Housing data is used so the coordinate descent loop finishes quickly. The resulting coefficients depend on the chosen tolerance, the 
+iteration limit, and the range of penalty values.
 
-## دد
- د
