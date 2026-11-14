@@ -42,13 +42,14 @@ Printed values of the training and test error for each model.
 
 ## Project Structure
 regularized-regression-from-scratch/
-─ regularized_regression.py   # Main implementation and demo
 
-─ lasso_path.png              ![lasso path](lasso_path.png)
+─ regularized_regression.py          # Main implementation and demo
 
-                              # Regularization path plot
+─ lasso_path.png                     ![lasso path](lasso_path.png)
+
+                                     # Regularization path plot
                               
-─ README.md                   # Documentation
+─ README.md                          # Documentation
 
 ## Notes
 The features are standardized before fitting, since regularized models are not scale-invariant, and the intercept is kept out of the penalty term. Only a subset of the California Housing data is used so the coordinate descent loop finishes quickly. The resulting coefficients depend on the chosen tolerance, the 
